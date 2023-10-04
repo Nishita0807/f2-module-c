@@ -254,7 +254,7 @@ margin-bottom: 12px;
 }
 .main-section{
     display: flex;
-    gap:110px;
+    gap:50px;
     justify-content: space-between;
     padding:30px;
 }
