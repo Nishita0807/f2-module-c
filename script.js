@@ -243,7 +243,7 @@ function filterRecipes(typeFilter = 'all', ratingFilter = 'all') {
     let filteredByRating = filteredRecipes;
 
     if (ratingFilter === 'above-4-5') {
-        filteredByRating = filteredRecipes.filter((recipe) => parseFloat(recipe.rating) >= 4.5);
+        filteredByRating = filteredRecipes.filter((recipe) => parseFloat(recipe.rating) >= 4.0);
     } else if (ratingFilter === 'below-4-0') {
         filteredByRating = filteredRecipes.filter((recipe) => parseFloat(recipe.rating) < 4.0);
     }
