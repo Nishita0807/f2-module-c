@@ -240,13 +240,15 @@ function filterRecipes(typeFilter = 'all', ratingFilter = 'all') {
         return false;
     });
 
+    let filteredByRating = filteredRecipes;
+
     if (ratingFilter === 'above-4-5') {
-        displayRecipes(filteredRecipes.filter((recipe) => parseFloat(recipe.rating) >= 4.5));
+        filteredByRating = filteredRecipes.filter((recipe) => parseFloat(recipe.rating) >= 4.5);
     } else if (ratingFilter === 'below-4-0') {
-        displayRecipes(filteredRecipes.filter((recipe) => parseFloat(recipe.rating) < 4.0));
-    } else {
-        displayRecipes(filteredRecipes);
+        filteredByRating = filteredRecipes.filter((recipe) => parseFloat(recipe.rating) < 4.0);
     }
+
+    displayRecipes(filteredByRating);
 }
 });
 
