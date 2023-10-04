@@ -1,0 +1,425 @@
+/* Add your styles for the website here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.search-bar {
+    text-align: center;
+    margin: 40px;
+}
+.search-bar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+.ham{
+    display: none;
+}
+
+.s1{
+    display: flex;
+    align-items: center;
+    background-color: #F3F3F3;
+    height: 30px;
+    padding: 5px;
+    padding-left: 12px;
+    color: gray;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius:12px;
+}
+.s2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #509E2F;
+    height: 30px;
+    padding: 5px;
+    width:30px;
+    
+   
+}
+.second{
+    color:white;
+}
+.search-bar input {
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+    height:30px;
+}
+input[type="text"]{
+    border: none;
+    background: #F3F3F3;
+}
+input[type="text"]::placeholder{
+    color:gray;
+}
+
+.filter-buttons {
+   margin-left: 35px;
+   display: flex;
+   gap:10px;
+
+}
+
+#show-veg {
+    width:200px;
+    height:100px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border:none;
+    background: #C4D600;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#show-non-veg{
+    width:200px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border:none;
+    background: #DC582A;
+    border-radius: 10px;
+    font-size: 16px;
+
+   
+}
+#show-all{
+    font-size: 16px;
+    background: #EAAA00;
+    border-radius: 10px;
+    border:none;
+    width:200px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+  
+   
+}
+
+.rating-filter {
+   
+
+   
+    padding: 30px;
+    width:800px;
+}
+
+.rating-filter label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+  
+}
+
+.recipe-card {
+    border: none;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    background: #FFF;
+    box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05), 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
+}
+
+
+
+.like-button {
+    cursor: pointer;
+}
+
+/* Add this CSS rule to change the color to red when liked */
+.like-button.liked {
+    color: red;
+}
+
+nav {
+    display: flex; /* Use flexbox to create a row layout */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Distribute space between the two divs */
+    padding: 10px; /* Add padding for spacing */
+    padding-left: 150px;
+    padding-right: 100px;
+    
+}
+
+.slide {
+    display: flex; /* Use flexbox to create a row layout */
+    gap: 30px; /* Add spacing between the inner divs */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slide > div {
+    padding: 5px 10px; /* Add padding to inner divs */
+   
+    cursor: pointer; /* Add cursor pointer on hover */
+}
+
+.slide > div:hover {
+    background-color:cyan; /* Change background color on hover */
+}
+.main-image {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("./rectangle.png");
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-size: cover; /* Cover the entire div with the background image */
+ margin:40px;
+}
+.main-image>div{
+    margin:70px;
+    margin-bottom:80px;
+}
+
+
+.home{
+    color: #509E2F;
+    font-size: 16px;
+font-style: normal;
+font-weight: 500;
+}
+.trend{
+    font-size: 24px;
+    color: orangered;
+}
+.mike{
+   
+    font-size: 40px;
+font-style: normal;
+font-weight: 700;
+color: white;
+}
+.john{
+    font-size: 20px;
+font-style: normal;
+font-weight: 500;
+color: white;
+}
+
+
+.search{
+   margin:20px;
+    margin-left:40px;
+    color: #252525;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.f{
+    font-size: 22px;
+    font-weight: 600;
+    margin:3px;
+    margin-bottom: 12px;
+}
+.r{
+    margin:3px;
+    font-size: 18px;
+font-style: normal;
+font-weight: 500; 
+margin-bottom: 12px;
+}
+.main-section{
+    display: flex;
+    gap:110px;
+    justify-content: space-between;
+    padding:30px;
+}
+
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+    border:6px solid gray;
+    margin:50px;
+   
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  margin:30px;
+   gap:40px;
+  
+}
+.icons>div{
+    background-color:gray;
+    padding:10px;
+    border-radius:50%;
+}
+
+
+
+.i1{
+    width:250px;
+}
+ul{
+    list-style: none;
+}
+ul>li{
+    margin-bottom: 20px;
+}
+.company{
+    font-size: 20px;
+font-style: normal;
+font-weight: 600;
+}
+
+
+.last{
+    color: var(--black-alpha-60, rgba(0, 0, 0, 0.60));
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.i3{
+   width: 400px;
+}
+
+.i3>div>div>input[type="email"]{
+    border:none;
+}
+
+.i3>div>div>input[type="email"]::placeholder{
+padding-left: 12px;
+}
+.i3>div>div{
+    border:1px solid ;
+padding-top:12px;
+padding-bottom:12px;
+width:300px;
+}
+.l{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.l>button{
+    display: flex;
+    align-items: center;
+  background-color: #509E2F;
+  color: #FFF;
+  border: none;
+    padding: 15px;
+}
+.i3>div>div>span{
+    padding-left:100px;
+    padding-right: 0px;
+}
+@media screen and (max-width: 768px) {
+    /* Add responsive styles here */
+    .slide{
+        display: none;
+    }
+    .f{
+        display: none;
+    }
+   .main-image{
+    margin-right:50px;
+   border-top-right-radius: 40px;
+   border-bottom-right-radius: 40px;
+   }
+   .main-section {
+    flex-direction: column;
+}
+.rating-filter{
+    width:400px;
+}
+.ch{
+    display: flex;
+    justify-content: space-between;
+    gap:0px;
+
+}
+#below-4-0{
+    margin-left:-250px;
+}
+.recipe-container {
+    order: 2;
+    width: 100%;
+    margin-top:-150px;
+}
+
+.recipe-card> img{
+   max-width:100px;
+   max-height:100px;
+}
+.recipe-card {
+   
+    max-width: 100px;
+    padding: 12px;
+}
+
+
+#r-name{
+    font-size:12px;
+    margin-left:-10px;
+}
+    #hamburger{
+        display: block;
+        
+        margin-left:-200px;
+    }
+    nav{
+        
+        gap:0px;
+        display: flex;
+        justify-content: space-around;
+    }
+   
+    nav>div>img{
+        margin-left:-180px;
+    }
+    .i3{
+        display: none;
+    }
+    .contact>div>ul>li{
+        display: none;
+    }
+    .i1{
+        width:100%;
+    }
+
+    .icons{
+        display:none;
+    }
+    .contact{
+        border: none;
+    }
+   
+}
+/* Add your existing CSS styles here */
+
+/* Style for the hamburger icon */
+
