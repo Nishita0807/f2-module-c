@@ -122,7 +122,8 @@ input[type="text"]::placeholder{
 
    
     padding: 30px;
-    width:400px;
+   width:600px;
+    
 }
 
 .rating-filter label {
@@ -197,6 +198,7 @@ border-top-right-radius: 40px;
     background-image: url("./rectangle.png");
     background-repeat: no-repeat; /* Prevent background image from repeating */
     background-size: cover; /* Cover the entire div with the background image */
+    margin-left:-30px;
  margin:40px;
 }
 .main-image>div{
@@ -255,7 +257,7 @@ margin-bottom: 12px;
 }
 .main-section{
     display: flex;
-    gap:50px;
+    gap:30px;
     justify-content: space-between;
     padding:30px;
 }
